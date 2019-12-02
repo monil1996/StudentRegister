@@ -18,7 +18,16 @@ public class StudentRepositoryImpl {
         return studentRepository.findAll();
     }
 
-    public Student getStudentByStudentId(int id){
+    public Student getStudentByStudentId(String id) {
         return studentRepository.findByStudentId(id);
+    }
+
+    public void deleteStudentByStudentId(Student student) {
+        studentRepository.delete(student);
+    }
+
+    public Student updateStudent(Student student) {
+        return studentRepository.save(student);
+
     }
 }

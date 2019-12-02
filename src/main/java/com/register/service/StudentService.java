@@ -21,7 +21,15 @@ public class StudentService {
         return studentRepository.getAllStudents();
     }
 
-    public Student getStudentByStudentId(int id) {
+    public Student getStudentByStudentId(String id) {
         return studentRepository.getStudentByStudentId(id);
+    }
+
+    public void deleteStudentByStudentId(Student student) {
+        studentRepository.deleteStudentByStudentId(student);
+    }
+
+    public Student updateStudent(Student student) {
+        return studentRepository.updateStudent(student);
     }
 }

@@ -7,8 +7,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 public class Student {
 
-    private int studentId;
+    private String studentId;
     private String firstName;
     private String lastName;
+    private String id;
+
 
 }
